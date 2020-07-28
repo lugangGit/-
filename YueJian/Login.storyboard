@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zU7-ul-sOH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="PCw-FS-ldY">
+            <objects>
+                <viewController storyboardIdentifier="LoginPage" id="AgF-pl-Wae" customClass="YJ_LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lbR-sx-wcz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="D5s-BC-RWP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hae-TE-7jo"/>
+                    <connections>
+                        <segue destination="xml-5R-9D3" kind="show" identifier="ForgetPage" id="NaI-Uo-buG"/>
+                        <segue destination="yz9-nh-grL" kind="show" identifier="RegisterPage" id="vFg-Bi-XN1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEk-M2-96B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="189.3553223388306"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="4DX-YY-ReM">
+            <objects>
+                <viewController storyboardIdentifier="RegisterPage" id="yz9-nh-grL" customClass="YJ_RegisterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oIO-4j-Fov">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VIk-Kg-7wF"/>
+                    </view>
+                    <connections>
+                        <segue destination="TME-we-myG" kind="push" identifier="registerUserInfo" id="lFO-e0-e2Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRp-Ov-Ald" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="457"/>
+        </scene>
+        <!--Register User Info View Controller-->
+        <scene sceneID="oqN-bO-MOB">
+            <objects>
+                <viewController id="TME-we-myG" customClass="YJ_RegisterUserInfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mF1-q7-W9m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nB2-5f-jDk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4q3-zf-X2z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="itv-mA-zEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="457"/>
+        </scene>
+        <!--Register User Play View Controller-->
+        <scene sceneID="9XF-LV-RBF">
+            <objects>
+                <viewController id="kaR-13-nog" customClass="YJ_RegisterUserPlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="11M-X6-SfI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="C1E-MH-V4e"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fax-E2-f7w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mmr-Qj-hJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2561" y="457"/>
+        </scene>
+        <!--Forget Password View Controller-->
+        <scene sceneID="NFC-wD-1uK">
+            <objects>
+                <viewController id="xml-5R-9D3" customClass="YJ_ForgetPasswordViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ujY-N4-GsY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VAK-iZ-ZpX"/>
+                    </view>
+                    <connections>
+                        <segue destination="TME-we-myG" kind="show" identifier="registerUserInfo" id="fAj-0N-bUA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Iy-I2-dIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="-201"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="78j-cw-nBd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zU7-ul-sOH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ey9-UA-3h1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AgF-pl-Wae" kind="relationship" relationship="rootViewController" id="u6q-dS-OgI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rJL-wy-gJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-466" y="189"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lFO-e0-e2Q"/>
+    </inferredMetricsTieBreakers>
+</document>

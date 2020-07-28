@@ -1,0 +1,32 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/Artsy/Specs.git'
+
+platform :ios, '9.0'
+
+target 'YueJian' do
+  use_frameworks!
+  pod 'CocoaLumberjack'
+  pod 'SVProgressHUD'
+  pod 'AFNetworking'
+  pod 'BlocksKit'
+  pod 'ReactiveObjC'
+  pod 'RESideMenu'
+  pod 'Masonry'
+  pod 'MXSegmentedPager'
+  pod 'MJRefresh'
+  pod 'TYAttributedLabel'
+  pod 'SDCycleScrollView'
+  pod 'JDStatusBarNotification'
+  pod 'LKDBHelper'
+  pod 'JKCategories'
+  pod 'YYCache'
+  pod 'FSCalendar'
+  pod 'MLLabel'
+  pod 'MMWebView'
+  pod 'UUButton'
+  pod 'TZImagePickerController'
+  pod 'Shimmer'
+  pod 'mob_smssdk'
+  pod 'MBProgressHUD'
+  pod 'KSPhotoBrowser'
+end

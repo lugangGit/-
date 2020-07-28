@@ -1,0 +1,6 @@
+framework module MMWebView {
+  umbrella header "MMWebView-umbrella.h"
+
+  export *
+  module * { export * }
+}
